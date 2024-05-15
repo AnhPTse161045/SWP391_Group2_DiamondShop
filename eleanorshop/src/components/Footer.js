@@ -9,8 +9,7 @@ AiFillFacebook,
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.setFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -18,7 +17,7 @@ function Footer() {
           <h3>This is Footer Demo</h3>
         </Col>
         <Col md="4" className="footer-copyright">
-          <h3>Copyright© {year} </h3>
+          <h3>Copyright© 2024 </h3>
         </Col>
         <Col md="4" className="footer-copyright">
           <ul className="footer-icons">
