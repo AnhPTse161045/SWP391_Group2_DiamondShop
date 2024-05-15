@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+THis is Group 2 react App
+
+
+This App is About Diamond ,we sell diamond
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
