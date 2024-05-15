@@ -1,7 +1,11 @@
 THis is Group 2 react App
 
+I love Mi MiTom
 
-This App is About Diamond ,we sell diamond
+
+
+
+This App is About Diamond ,we sell 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
