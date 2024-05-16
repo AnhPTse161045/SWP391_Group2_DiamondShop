@@ -1,71 +1,58 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  
-AiFillInstagram,
-AiFillX,
-AiFillFacebook,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import { Footer } from 'flowbite-react';
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 
-function Footer() {
-
+const CustomFooter = () => {
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copyright">
-          <h3>This is Footer Demo</h3>
-        </Col>
-        <Col md="4" className="footer-copyright">
-          <h3>Copyright© 2024 </h3>
-        </Col>
-        <Col md="4" className="footer-copyright">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://www.facebook.com/tuan.anh.june11/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillFacebook />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/elonmusk"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillX />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/williamhgates/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/naut_.anh/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <Footer container={true} className="bg-white">
+      <div className="w-full">
+        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+          <div>
+            <Footer.Brand
+              href="https://flowbite.com"
+              src="https://flowbite.com/docs/images/logo.svg"
+              alt="Flowbite Logo"
+              name="Flowbite"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <Footer.Title title="about" />
+              <Footer.LinkGroup col={true}>
+                <Footer.Link href="#">Flowbite</Footer.Link>
+                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Follow us" />
+              <Footer.LinkGroup col={true}>
+                <Footer.Link href="#">Github</Footer.Link>
+                <Footer.Link href="#">Discord</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Legal" />
+              <Footer.LinkGroup col={true}>
+                <Footer.Link href="#">Privacy Policy</Footer.Link>
+                <Footer.Link href="#">Terms & Conditions</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+          </div>
+        </div>
+        <Footer.Divider />
+        <div className="w-full sm:flex sm:items-center sm:justify-between">
+          <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <Footer.Icon href="#" icon={BsFacebook} />
+            <Footer.Icon href="#" icon={BsInstagram} />
+            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="#" icon={BsGithub} />
+            <Footer.Icon href="#" icon={BsDribbble} />
+          </div>
+        </div>
+      </div>
+    </Footer>
   );
-}
+};
 
-export default Footer;
+export default CustomFooter;
