@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+/* You can customize your CSS here if needed */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar .navbar-brand {
+  color: #000;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #0056b3;
+}
+
+.navbar .form-inline {
+  display: flex;
+}
+
+.navbar .form-inline .form-control {
+  width: auto;
+}
+
+.navbar .form-inline .btn {
+  margin-left: 5px;
+}
