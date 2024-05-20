@@ -1,0 +1,35 @@
+.bg-black {
+    background-color: #000000; /* Black background */
+  }
+  
+  .white-80 {
+    color: rgba(255, 255, 255, 0.8); /* White text with 80% opacity */
+  }
+  
+  .brand-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between the image and the text */
+  }
+  
+  .brand-logo {
+    width: 150px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav a {
+    color: #ffffff; /* White text */
+  }
+  
+  nav a:hover {
+    color: #cccccc; /* Slightly lighter color on hover */
+  }
+  
+  .navbar-cart {
+    color: #ffffff; /* White color for cart icon */
+  }
+  
+  .navbar-cart:hover {
+    color: #cccccc; /* Slightly lighter color on hover */
+  }
+  

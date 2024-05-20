@@ -1,94 +1,270 @@
-import React from "react";
 import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
   MDBCardImage,
+  MDBCardText,
   MDBCol,
   MDBContainer,
   MDBIcon,
+  MDBInput,
   MDBRow,
+  MDBTypography,
 } from "mdb-react-ui-kit";
+import React from "react";
+import diamond1 from "./assets/diamond1.png";
+import diamond2 from "./assets/diamond2.png";
+import diamond3 from "./assets/diamond3.png";
 
-export default function Cart() {
+export default function QuantityEdit() {
   return (
-    <section className="vh-100" style={{ backgroundColor: "#fdccbc" }}>
-      <MDBContainer className="h-100">
+    <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
+      <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol>
-            <p>
-              <span className="h2">Shopping Cart </span>
-              <span className="h4">(1 item in your cart)</span>
-            </p>
+          <MDBCol size="12">
+            <MDBCard
+              className="card-registration card-registration-2"
+              style={{ borderRadius: "15px" }}
+            >
+              <MDBCardBody className="p-0">
+                <MDBRow className="g-0">
+                  <MDBCol lg="8">
+                    <div className="p-5">
+                      <div className="d-flex justify-content-between align-items-center mb-5">
+                        <MDBTypography
+                          tag="h1"
+                          className="fw-bold mb-0 text-black"
+                        >
+                          Shopping Cart
+                        </MDBTypography>
+                        <MDBTypography className="mb-0 text-muted">
+                          3 items
+                        </MDBTypography>
+                      </div>
 
-            <MDBCard className="mb-4">
-              <MDBCardBody className="p-4">
-                <MDBRow className="align-items-center">
-                  <MDBCol md="2">
-                    <MDBCardImage
-                      fluid
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
-                      alt="Generic placeholder image"
-                    />
-                  </MDBCol>
-                  <MDBCol md="2" className="d-flex justify-content-center">
-                    <div>
-                      <p className="small text-muted mb-4 pb-2">Name</p>
-                      <p className="lead fw-normal mb-0">iPad Air</p>
+                      <hr className="my-4" />
+
+                      <MDBRow className="mb-4 d-flex justify-content-between align-items-center">
+                        <MDBCol md="2" lg="2" xl="2">
+                          <MDBCardImage
+                            src={diamond1}
+                            fluid
+                            className="rounded-3"
+                            alt="diamond 1"
+                          />
+                        </MDBCol>
+                        <MDBCol md="3" lg="3" xl="3">
+                          <MDBTypography tag="h6" className="text-muted">
+                            Shirt
+                          </MDBTypography>
+                          <MDBTypography tag="h6" className="text-black mb-0">
+                            Cotton T-shirt
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol
+                          md="3"
+                          lg="3"
+                          xl="3"
+                          className="d-flex align-items-center"
+                        >
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="minus" />
+                          </MDBBtn>
+
+                          <MDBInput
+                            type="number"
+                            min="0"
+                            defaultValue={1}
+                            size="sm"
+                          />
+
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="plus" />
+                          </MDBBtn>
+                        </MDBCol>
+                        <MDBCol md="3" lg="2" xl="2" className="text-end">
+                          <MDBTypography tag="h6" className="mb-0">
+                            € 44.00
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol md="1" lg="1" xl="1" className="text-end">
+                          <a href="#!" className="text-muted">
+                            <MDBIcon fas icon="times" />
+                          </a>
+                        </MDBCol>
+                      </MDBRow>
+
+                      <hr className="my-4" />
+
+                      <MDBRow className="mb-4 d-flex justify-content-between align-items-center">
+                        <MDBCol md="2" lg="2" xl="2">
+                          <MDBCardImage
+                            src={diamond2}
+                            fluid
+                            className="rounded-3"
+                            alt="Cotton T-shirt"
+                          />
+                        </MDBCol>
+                        <MDBCol md="3" lg="3" xl="3">
+                          <MDBTypography tag="h6" className="text-muted">
+                            Shirt
+                          </MDBTypography>
+                          <MDBTypography tag="h6" className="text-black mb-0">
+                            Cotton T-shirt
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol
+                          md="3"
+                          lg="3"
+                          xl="3"
+                          className="d-flex align-items-center"
+                        >
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="minus" />
+                          </MDBBtn>
+
+                          <MDBInput
+                            type="number"
+                            min="0"
+                            defaultValue={1}
+                            size="sm"
+                          />
+
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="plus" />
+                          </MDBBtn>
+                        </MDBCol>
+                        <MDBCol md="3" lg="2" xl="2" className="text-end">
+                          <MDBTypography tag="h6" className="mb-0">
+                            € 44.00
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol md="1" lg="1" xl="1" className="text-end">
+                          <a href="#!" className="text-muted">
+                            <MDBIcon fas icon="times" />
+                          </a>
+                        </MDBCol>
+                      </MDBRow>
+
+                      <hr className="my-4" />
+
+                      <MDBRow className="mb-4 d-flex justify-content-between align-items-center">
+                        <MDBCol md="2" lg="2" xl="2">
+                          <MDBCardImage
+                            src={diamond3}
+                            fluid
+                            className="rounded-3"
+                            alt="Cotton T-shirt"
+                          />
+                        </MDBCol>
+                        <MDBCol md="3" lg="3" xl="3">
+                          <MDBTypography tag="h6" className="text-muted">
+                            Shirt
+                          </MDBTypography>
+                          <MDBTypography tag="h6" className="text-black mb-0">
+                            Cotton T-shirt
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol
+                          md="3"
+                          lg="3"
+                          xl="3"
+                          className="d-flex align-items-center"
+                        >
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="minus" />
+                          </MDBBtn>
+
+                          <MDBInput
+                            type="number"
+                            min="0"
+                            defaultValue={1}
+                            size="sm"
+                          />
+
+                          <MDBBtn color="link" className="px-2">
+                            <MDBIcon fas icon="plus" />
+                          </MDBBtn>
+                        </MDBCol>
+                        <MDBCol md="3" lg="2" xl="2" className="text-end">
+                          <MDBTypography tag="h6" className="mb-0">
+                            € 44.00
+                          </MDBTypography>
+                        </MDBCol>
+                        <MDBCol md="1" lg="1" xl="1" className="text-end">
+                          <a href="#!" className="text-muted">
+                            <MDBIcon fas icon="times" />
+                          </a>
+                        </MDBCol>
+                      </MDBRow>
+
+                      <hr className="my-4" />
+
+                      <div className="pt-5">
+                        <MDBTypography tag="h6" className="mb-0">
+                          <MDBCardText tag="a" href="/shop" className="text-body">
+                            <MDBIcon fas icon="long-arrow-alt-left me-2" /> Back
+                            to shop
+                          </MDBCardText>
+                        </MDBTypography>
+                      </div>
                     </div>
                   </MDBCol>
-                  <MDBCol md="2" className="d-flex justify-content-center">
-                    <div>
-                      <p className="small text-muted mb-4 pb-2">Color</p>
-                      <p className="lead fw-normal mb-0">
-                        <MDBIcon
-                          fas
-                          icon="circle me-2"
-                          style={{ color: "#fdd8d2" }}
-                        />
-                        pink rose
-                      </p>
-                    </div>
-                  </MDBCol>
-                  <MDBCol md="2" className="d-flex justify-content-center">
-                    <div>
-                      <p className="small text-muted mb-4 pb-2">Quantity</p>
-                      <p className="lead fw-normal mb-0">1</p>
-                    </div>
-                  </MDBCol>
-                  <MDBCol md="2" className="d-flex justify-content-center">
-                    <div>
-                      <p className="small text-muted mb-4 pb-2">Price</p>
-                      <p className="lead fw-normal mb-0">$799</p>
-                    </div>
-                  </MDBCol>
-                  <MDBCol md="2" className="d-flex justify-content-center">
-                    <div>
-                      <p className="small text-muted mb-4 pb-2">Total</p>
-                      <p className="lead fw-normal mb-0">$799</p>
+                  <MDBCol lg="4" className="bg-grey">
+                    <div className="p-5">
+                      <MDBTypography
+                        tag="h3"
+                        className="fw-bold mb-5 mt-2 pt-1"
+                      >
+                        Summary
+                      </MDBTypography>
+
+                      <hr className="my-4" />
+
+                      <div className="d-flex justify-content-between mb-4">
+                        <MDBTypography tag="h5" className="text-uppercase">
+                          items 3
+                        </MDBTypography>
+                        <MDBTypography tag="h5">€ 132.00</MDBTypography>
+                      </div>
+
+                      <MDBTypography tag="h5" className="text-uppercase mb-3">
+                        Shipping
+                      </MDBTypography>
+
+                      <div className="mb-4 pb-2">
+                        <select
+                          className="select p-2 rounded bg-grey"
+                          style={{ width: "100%" }}
+                        >
+                          <option value="1">Standard-Delivery- €5.00</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="4">Four</option>
+                        </select>
+                      </div>
+                      <div className="mb-5">
+                        <MDBInput size="lg" label="Enter your code" />
+                      </div>
+
+                      <hr className="my-4" />
+
+                      <div className="d-flex justify-content-between mb-5">
+                        <MDBTypography tag="h5" className="text-uppercase">
+                          Total price
+                        </MDBTypography>
+                        <MDBTypography tag="h5">€ 137.00</MDBTypography>
+                      </div>
+
+                      <MDBBtn href="/register"  color="dark" block size="lg">
+                        Register
+                      </MDBBtn>
+
                     </div>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-
-            <MDBCard className="mb-5">
-              <MDBCardBody className="p-4">
-                <div className="float-end">
-                  <p className="mb-0 me-5 d-flex align-items-center">
-                    <span className="small text-muted me-2">Order total:</span>
-                    <span className="lead fw-normal">$799</span>
-                  </p>
-                </div>
-              </MDBCardBody>
-            </MDBCard>
-
-            <div className="d-flex justify-content-end">
-              <MDBBtn color="light" size="lg" className="me-2">
-                Continue shopping
-              </MDBBtn>
-              <MDBBtn size="lg">Add to cart</MDBBtn>
-            </div>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

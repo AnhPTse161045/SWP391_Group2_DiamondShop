@@ -1,11 +1,14 @@
-import React from 'react'
-
-const About = () => {
-  return (
-    <div>
-      <h2>THis is About Page</h2>
-    </div>
-  )
+import React, { Component } from "react";
+import diamond1 from "./assets/diamond1.png";
+export default class About extends Component {
+  render() {
+    return (
+      <div className="row">
+        <div className="ogo">
+          <h1>This is About Page</h1>
+          <img src={diamond1} alt="hihi"/>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default About;

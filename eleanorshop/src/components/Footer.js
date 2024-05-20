@@ -22,12 +22,12 @@ export default function Footer() {
           <a href='https://www.instagram.com/' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href='https://www.linkedin.com/' className='me-4 text-reset'>
+          {/* <a href='https://www.linkedin.com/' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href='https://github.com/' className='me-4 text-reset'>
+          </a> */}
+          {/* <a href='https://github.com/' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
-          </a>
+          </a> */}
         </div>
       </section>
 
@@ -37,11 +37,10 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+               Eleanor & Co 
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+              Unveil Your Inner Elegance - Eleanor & Co.
               </p>
             </MDBCol>
 
@@ -49,22 +48,22 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                 Diamond
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                 Ring
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Vue
+                 Chain
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Laravel
+                 Earing
                 </a>
               </p>
             </MDBCol>
@@ -72,18 +71,18 @@ export default function Footer() {
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
+                <a href='/' className='text-reset'>
+                  Home
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Settings
+                <a href='about' className='text-reset'>
+                  About
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Orders
+                <a href='contact' className='text-reset'>
+                  Contact
                 </a>
               </p>
               <p>
@@ -97,17 +96,17 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Thu Duc City, Ho Chi Minh
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                eleanorandco@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> + 09 999 999 99
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" /> + 09 999 999 99
               </p>
             </MDBCol>
           </MDBRow>
@@ -115,9 +114,9 @@ export default function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        © 2024 Copyright :
+        <a className='text-reset fw-bold' href='localhost:3000'>
+           Eleanor & Co
         </a>
       </div>
     </MDBFooter>
