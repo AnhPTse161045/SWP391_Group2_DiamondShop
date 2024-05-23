@@ -17,6 +17,7 @@ import { CartProvider } from './components/context/CartContext'; // Import CartP
 
 function App() {
   return (
+<<<<<<< HEAD
     <CartProvider>
       <Router>
         <div className="App">
@@ -37,6 +38,25 @@ function App() {
             </Routes>
           </div>
           <Footer />
+=======
+    <Router>
+      <div className="App">
+        <NavbarPage />
+        
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/shop" element={<Shop />} />  
+            <Route path="/register" element={<Register />} /> 
+            <Route path="/login" element={<Login />} />    
+            <Route path="register" element={<Register/>} />
+          </Routes>
+
+>>>>>>> 668d6908143ed57314c6500c80ff576c4cbdae1b
         </div>
       </Router>
     </CartProvider>
