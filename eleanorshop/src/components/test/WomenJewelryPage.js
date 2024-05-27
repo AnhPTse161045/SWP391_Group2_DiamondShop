@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Product from '../Product'; // Adjust the import path if necessary
 import '../styles/WeddingRingsPage.css'; // Adjust the import path if necessary
+
 import necklace from '../assets/necklace2.jpg';
 import diamond1 from '../assets/diamond1.png';
 import diamond2 from '../assets/diamond2.png';
@@ -30,10 +31,9 @@ const weddingRings = [
   { id: 12, image:diamond11, name: 'Custom Wedding Ring', cost: 2000, description: 'A custom wedding ring designed to your preference.', material: 'Custom', chiefOfficer: 'David Black', additionalPills: 'N/A', productCode: 'CWR006' },
   // Add more wedding rings as needed
 ];
-
 const PRODUCTS_PER_PAGE = 5;
 
-function WeddingRingsPage() {
+function WomenJewelryPage() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(weddingRings.length / PRODUCTS_PER_PAGE);
@@ -55,7 +55,7 @@ function WeddingRingsPage() {
 
   return (
     <div className="wedding-rings-page">
-      <h1>Wedding Rings</h1>
+      <h1>Women's Jewelry</h1>
       <div className="product-grid">
         {selectedRings.map((ring) => (
           <Product key={ring.id} {...ring} />
@@ -77,4 +77,4 @@ function WeddingRingsPage() {
   );
 }
 
-export default WeddingRingsPage;
+export default WomenJewelryPage;

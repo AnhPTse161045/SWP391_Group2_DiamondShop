@@ -1,43 +1,112 @@
-/* styles/WeddingRingsPage.css */
+/* WeddingRingsPage.css */
 
 .wedding-rings-page {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .wedding-rings-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  .product-grid .product-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .product-grid .product-card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .product-grid .product-card .product-name {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .product-grid .product-card .product-cost {
-    color: #888;
-    font-size: 1em;
-  }
-  
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.wedding-rings-page h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card-body {
+  padding: 15px;
+}
+
+.product-card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.product-card-text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.product-card-cost {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card-info {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.product-card-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-card-button:hover {
+  background-color: black;
+}
+
+.pagination-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: black  ; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.pagination-button:hover {
+  background-color: black;
+}
+
+.pagination-button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}

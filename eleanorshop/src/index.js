@@ -6,16 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { GoogleOAuthProvider } from "@react-oauth/google"
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { CartProvider } from './components/context/CartContext';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <GoogleOAuthProvider clientId='681889592320-69kqptjq89t292re86fqaj0b7hfoj094.apps.googleusercontent.com'>
+    <CartProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </CartProvider>
   </GoogleOAuthProvider>
 );
 

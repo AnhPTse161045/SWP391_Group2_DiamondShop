@@ -9,6 +9,12 @@ import diamond1 from './assets/diamond1.png';
 import diamond2 from './assets/diamond2.png';
 import diamond3 from './assets/diamond3.png';
 import WeddingRingsPage from './test/WeddingRingsPage';
+import Ring from './test/Ring';
+import NecklacesPage from './test/NecklacesPage';
+import BracelesPage from './test/BracelesPage';
+import WomenJewelryPage from './test/WomenJewelryPage';
+import MenJewelryPage from './test/MenJewelryPage';
+
 
 const categories = [
   { name: 'Wedding Ring', img: weddingring, link: '/wedding-bands' },
@@ -39,9 +45,14 @@ function CategoryImage({ img }) {
 
 export default function ShopPage() {
   return (
+    
+
     <div className="shop-page">
       <header>
         <h1>Shop By Category</h1>
+
+
+
       </header>
       <div className="category-grid">
         {categories.map((category, index) => (
@@ -54,9 +65,22 @@ export default function ShopPage() {
           </Link>
         ))}
       </div>
+      
       <div>
+      <hr/>
         <WeddingRingsPage/>
-      </div>
+        <hr/>
+        <Ring/>
+        <hr/>
+        <NecklacesPage/>
+        <hr/>
+        <BracelesPage/>
+        <hr/>
+        <WomenJewelryPage/>
+        <hr/>
+        <MenJewelryPage/>
+        <hr/>
+      </div> 
     </div>
   );
 }

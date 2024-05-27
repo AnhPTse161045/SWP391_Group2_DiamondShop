@@ -1,9 +1,9 @@
 // components/CartPage.js
 import React, { useContext } from 'react';
 import { CartContext } from './context/CartContext';
-import     './styles/Cart.css'   ; // Create this CSS file as needed
+import './styles/Cart.css';
 
-function Cart() {
+function CartPage() {
   const { cart, removeFromCart, getTotalCost } = useContext(CartContext);
 
   if (cart.length === 0) {
@@ -20,6 +20,7 @@ function Cart() {
             <div>
               <h2>{item.name}</h2>
               <p>Cost: ${item.cost}</p>
+              <p>Quantity: {item.quantity}</p>
               <button onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
           </div>
@@ -32,4 +33,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartPage;

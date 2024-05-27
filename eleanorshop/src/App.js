@@ -14,6 +14,13 @@ import Register from "./components/Register";
 import Product from "./components/Product";
 import Hero from "./components/hero/Hero";
 import { CartProvider } from './components/context/CartContext'; // Import CartProvider
+import TestComponent from "./components/TestComponent";
+import Ring from "./components/test/Ring";
+import NecklacesPage from "./components/test/NecklacesPage";
+import BracelesPage from "./components/test/BracelesPage";
+import WomenJewelryPage from "./components/test/WomenJewelryPage";
+import MenJewelryPage from "./components/test/MenJewelryPage";
+
 
 function App() {
   return (
@@ -21,7 +28,7 @@ function App() {
       <Router>
         <div className="App">
           <NavbarPage />
-          <div>
+         
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -29,14 +36,29 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/shop" element={<ShopPage />} />
-              <Route path="/wedding-bands" element={<WeddingRingsPage />} />
               <Route path="/product/:id" element={<ProductDetailPage />} />
               <Route path="/product" element={<Product />} />
               <Route path="/register" element={<Register />} />
               <Route path="/hero" element={<Hero />} />
+              <Route path="/test" element={<TestComponent />} />
+
+             
+              <Route path="/wedding-bands" element={<WeddingRingsPage /> } />
+              <Route path="/weddingringpage" element={<WeddingRingsPage /> } />
+              <Route path="/ring" element={<Ring /> } />
+              <Route path="/rings" element={<Ring /> } />
+              <Route path="/necklaces" element={<NecklacesPage/> } />
+              <Route path="/bracelets" element={<BracelesPage /> } />
+              <Route path="/women-jewerly" element={<WomenJewelryPage /> } />
+              <Route path="/men-jewelry" element={<MenJewelryPage /> } />
+              <Route path="/womens-jewerly" element={<WomenJewelryPage /> } />
+              <Route path="/mens-jewelry" element={<MenJewelryPage /> } />
             </Routes>
-          </div>
+         
           <Footer />
+          <Cart/>
+
+      <TestComponent/>
         </div>
       </Router>
     </CartProvider>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/NavBarPage.css";
 import brand from "../assets/brandempty.png";
 import { MDBIcon } from "mdb-react-ui-kit";
-import video from "../assets/video/video.mp4";
+import video from "../assets/video/video3.mp4";
 
 class NavbarPage extends Component {
   state = {
@@ -12,7 +12,6 @@ class NavbarPage extends Component {
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
-
   render() {
     return (
       <div>
@@ -36,9 +35,12 @@ class NavbarPage extends Component {
                 Shop <i className="fa fa-caret-down"></i>
               </a>
               <div className="dropdown-content">
-                <a href="/shop/category1">Category 1</a>
-                <a href="/shop/category2">Category 2</a>
-                <a href="/shop/category3">Category 3</a>
+                <a href="/weddingringpage">Wedding Ring</a>
+                <a href="/ring">Ring</a>
+                <a href="/necklaces">Necklaces</a>
+                <a href="/braceles">Braceles</a>
+                <a href="/menjewelry">Men's Jewelry</a>
+                <a href="/womenjewelry">Women's Jewelry</a>
               </div>
             </div>
 
