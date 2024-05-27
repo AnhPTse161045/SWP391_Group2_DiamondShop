@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Karla } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Sidebar from "@/components/sidebar";
+import Header from "@/components/header";
+import PageWrapper from "@/components/pagewrapper1";
+import DashboardLayout from "@/components/DashboardLayout";
+const karla = Karla({ 
+  weight:['200','300','400','500','600','700','800'],
+  subsets: ["latin"] ,
+  variable :"--font-karla"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={karla.className}>
+        <div>
+        <Sidebar></Sidebar>
+        <Header></Header>
+       
+    
+        <PageWrapper>
+         {children}
+        </PageWrapper>
+        </div>
+        
+        </body>
     </html>
   );
 }
