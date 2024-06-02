@@ -17,6 +17,9 @@ import diamond10 from './assets/diamond10.jpg';
 import diamond11 from './assets/diamond12.jpg';
 
 
+import GIAimage from './assets/GIAimage.jpg';
+
+
 const products = [
   { id: 1, image : necklace, name: 'Diamond Wedding Ring', cost: 1200, description: 'A beautiful diamond wedding ring.', material: 'Diamond', chiefOfficer: 'John Doe', additionalPills: 'N/A', productCode: 'DR001' },
   { id: 2, image: diamond1, name: 'Gold Wedding Band', cost: 800, description: 'A classic gold wedding band.', material: 'Gold', chiefOfficer: 'Jane Smith', additionalPills: 'N/A', productCode: 'GW002' },
@@ -35,7 +38,7 @@ const products = [
 
 const materials = ['White Gold', 'Yellow Gold', 'Rose Gold', 'Platinum'];
 const mainStones = ['Diamond', 'Sapphire', 'Emerald', 'Ruby'];
-const subStones = ['None', 'Diamond', 'Sapphire', 'Emerald', 'Ruby'];
+const subStones = ['None', '1','2','3','4','5','6','7','8','9','10'];
 
 function ProductDetailPage() {
   const { id } = useParams();
@@ -83,10 +86,11 @@ function ProductDetailPage() {
       </div>
       <div className="product-details">
         <h1>{product.name}</h1>
-        <div className="product-rating">
+        {/* <div className="product-rating">
           {'★'.repeat(product.rating)}{'☆'.repeat(5 - product.rating)} ({product.rating} customer reviews)
-        </div>
-        <p className="product-cost">{product.cost.toLocaleString()} ₫</p>
+        </div> */}
+
+        <p className="product-cost">{product.cost.toLocaleString()}$ </p>
         <ul className="product-info">
           <li>
             Material: 
@@ -144,6 +148,7 @@ function ProductDetailPage() {
           {giaReportOpen && (
             <div className="collapsible-content">
               <p>Details about GIA grading will go here.</p>
+              <image src={GIAimage} alt='THis is GIA image'/>
             </div>
           )}
         </div>

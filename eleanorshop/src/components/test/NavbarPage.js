@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/NavBarPage.css";
 import brand from "../assets/brandempty.png";
 import { MDBIcon } from "mdb-react-ui-kit";
-import video from "../assets/video/video3.mp4";
+import video from "../assets/video/video.mp4";
 
 class NavbarPage extends Component {
   state = {

@@ -13,13 +13,15 @@ import { CartProvider } from './components/context/CartContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <CartProvider>
   <GoogleOAuthProvider clientId='681889592320-69kqptjq89t292re86fqaj0b7hfoj094.apps.googleusercontent.com'>
-    <CartProvider>
+   
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </CartProvider>
+ 
   </GoogleOAuthProvider>
+  </CartProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
