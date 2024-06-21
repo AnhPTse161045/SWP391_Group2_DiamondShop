@@ -20,6 +20,7 @@ import NecklacesPage from "./components/test/NecklacesPage";
 import BracelesPage from "./components/test/BracelesPage";
 import WomenJewelryPage from "./components/test/WomenJewelryPage";
 import MenJewelryPage from "./components/test/MenJewelryPage";
+import Template from "./components/Template";
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
               <Route path="/hero" element={<Hero />} />
               <Route path="/test" element={<TestComponent />} />
 
-             
+
+              <Route path="/template" element={<Template />} />
               <Route path="/wedding-bands" element={<WeddingRingsPage /> } />
               <Route path="/weddingringpage" element={<WeddingRingsPage /> } />
               <Route path="/ring" element={<Ring /> } />
